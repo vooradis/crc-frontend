@@ -2,6 +2,3 @@ steps:
   - name: gcr.io/cloud-builders/gsutil
     id: Sync the website content
     args: ['-m', 'rsync', '-r', '-c', '-d', '.', 'gs://crc-frontend-bucket']
-  - name: gcr.io/cloud-builders/gcloud
-    id: Invalidate the content CDN
-    args: ['compute', 'url-maps', 'invalidate-cdn-cache', 'https-lb', '--path', '.', '--project', '$PROJECT_ID']
