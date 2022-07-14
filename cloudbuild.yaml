@@ -4,4 +4,4 @@ steps:
     args: ['-m', 'rsync', '-r', '-c', '-d', '.', 'gs://crc-frontend-bucket']
   - name: gcr.io/cloud-builders/gcloud
     id:  Invalidate Cloud CDN cached content
-    args: ['compute', 'url-maps', 'invalidate-cdn-cache', '$_LOAD_BALANCER_NAME', '--host', '$HOSTNAME']
+    args: ['compute', 'url-maps', 'invalidate-cdn-cache', '$_LOAD_BALANCER_NAME', '--host', '$_HOSTNAME']
