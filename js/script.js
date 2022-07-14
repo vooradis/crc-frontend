@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const functionApi = 'https://australia-southeast1-elevated-cargo-355220.cloudfunctions.net/my-test-function';
 
 const getVisitCount = () => {
-    let count = 30;
+    let count = 0;
     fetch(functionApi)
     .then(response => {
         return response.json()
