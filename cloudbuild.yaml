@@ -1,7 +1,7 @@
 steps:
   - name: gcr.io/cloud-builders/gsutil
-    id: Sync the frontend repo
-    args: ['-m', 'rsync', '-r', '-c', '-d', '.', 'gs://crc-frontend-bucket']
+    id: Sync github repository
+    args: ['-m', 'rsync', '-r', '-c', '-d', '.', '$_BUCKET_NAME']
   - name: gcr.io/cloud-builders/gcloud
     id:  Invalidate Cloud CDN cached content
     args: ['compute', 'url-maps', 'invalidate-cdn-cache', '$_URL_MAP', '--path', '/*', '--project', '$PROJECT_ID']
