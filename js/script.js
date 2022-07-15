@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 });
 
-const functionApi = 'https://australia-southeast1-elevated-cargo-355220.cloudfunctions.net/my-test-function';
+const functionApi = 'https://australia-southeast1-elevated-cargo-355220.cloudfunctions.net/backend-cloud-function';
 
 const getVisitCount = () => {
     let count = 0;
