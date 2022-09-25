@@ -1,183 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Samrat Vooradi's Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Resume - Samrat Vooradi</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
-  <div class="page">
-  <header>
-    <h1>Samrat Vooradi</h1>
-    <h2>Cloud Enthusiast</h2>
-    <ul class="contact">
-      <li>
-        <img src="images/email.svg" alt="email">
-        samrat.vooradi.au@gmail.com
-      </li>
-      <li>
-        <img src="images/location.svg" alt="location">
-        Sydney, NSW
-      </li>
-      <li><a href="https://www.resume.samratvooradi.com/" target="_blank" rel="noopener noreferrer" class="hyper">
-        <img src="images/link.svg" alt="website">
-        samratvooradi.com
-      </a></li>
-      <li><a href="https://linkedin.com/in/samratvooradi" target="_blank" rel="noopener noreferrer" class="hyper">
-        <img src="images/linkedin.svg" alt="linkedin">
-        LinkedIn
-      </a></li>
-      <li><a href="https://github.com/vooradis" target="_blank" rel="noopener noreferrer" class="hyper">
-        <img src="images/github.svg" alt="github">
-        GitHub
-      </a></li>
-    </ul>
-    <br />
-  </header>
-  <main>
-    <section class="content--main">
-      <section class="summary">
-        <h3 class="title">Summary</h3>
-        <p>Self-motivated Cloud and Data Enthusiast.
-          I pride myself on my ability to succeed in a fast-paced environment.
-          I'm ambitious and eager to advance my career and expand my knowledge in all things Cloud.<p>
-      </section>
 
-
-
-<!--        Projects Column-->
-      <section class='projects'>
-        <h3 class="title">Experience & Projects</h3>
-
-
-<!--            Project 1-->
-         <article class="article">
-
-
-
-          <h4>Cloud Resume Challenge <font size="2px">- (Project)</font></h4>
-
-
-
-
-
-          <div class="article--subtitle">
-            <h5>Cloud Storage - Cloud Build - Cloud Functions - Cloud DNS - Cloud CDN - Load Balancing - Firestore - Terraform </h5>
-            <div class="separator--ver"></div>
-            <a href="https://www.resume.samratvooradi.com" target="_blank" rel="noopener noreferrer"><h5>LINK</h5></a>            
-          </div>
-          <ul>
-            <li>Used Google Cloud Storage bucket to host static resume website featuring a visitor counter.</li>
-            <li>Set up HTTPS load balancer for security and enabled Cloud CDN for caching. Utilized Cloud DNS for DNS operation.</li>
-            <li>Created Serveless function using Python as runtime to retrieve current visitor count, stored in Firestore, and update the count for each visit.</li>
-            <li>Setup API Gateway to accept requests from the web app, triggering the serverless function to communicate with the database.</li>
-            <li>Utilized Github repositories for Cloud Build operations.
-            <li>Converted infrastructure to code using Terraform for rapid deployment and CI/CD.</li>
-            <li>Learn more about the Cloud Resume Challenge <a href="https://cloudresumechallenge.dev/docs/the-challenge/googlecloud/"> HERE</a></li>
-          </ul>
-        </article>
-        <div class="separator--hrz"></div>
-
-
-<!--          Project 3-->
-
-        <!-- <article class="article">
-          <h4>Blog - Work In Progress</h4>
-          <div class="article--subtitle">
-            <h5>Work - In - Progress</h5>
-            <div class="separator--ver"></div>
-            <a href="Insert link here" target="_blank" rel="noopener noreferrer"><h5>DIRECT LINK</h5></a>
-          </div>
-          <ul>
-            <li>Personal blog where I document new learnings and previous projects in-depth</li>
-            <li>Bullet 2+84</li>
-            <li>Bullet 3</li>
-          </ul>
-        </article> -->
-
-      </section>
-    </section>
-
-
-
-<!--      Second Column-->
-    <aside class="content--secondary">
-      <div>
-        <section class="skillset">
-          <h3 class="title">Skill set</h3>
-          <ul class="tags">
-            <li>Google Cloud Platform (GCP)</li>
-            <li>Coding (HTML, CSS, JavaScript(JS), Python)</li>
-            <li>Storage (Google Cloud Storage (GCS), Firestore)</li>
-            <li>Networking (Cloud DNS, HTTPS Load balancing, Cloud CDN)</li>
-            <li>Source Control (Github)</li>
-            <li>CI/CD (Cloud Build, Cloud Functions, Terraform)</li>
-            <li>Process/Methodology (CI/CD, Infrastructure as Code (IaC))</li>
-          </ul>
-        </section>
-
-
-<!--          Education Row-->
-        <section class="education">
-          <h3 class="title">Education</h3>
-            <article class="article--cert">
-            <h4>GCP Certified - Professional Cloud Architect</h4>
-            <h5>Google Cloud Platform (GCP)</h5>
-            <section>
-              <div>
-                <img src="images/date.svg" alt="date">
-                2022
-              </div>
-              <div>
-                <a href="https://www.credential.net/daa4f28b-e025-4d62-b755-6fe87fe688b4" target="_blank" rel="noopener noreferrer">
-                  <img src="images/link.svg" alt="certificate">
-                  Certificate
-                </a>
-              </div>
-            </section>
-          </article>
-          <div class="separator--hrz"></div>
-          <article class="article--cert">
-            <h4>GCP Certified - Associate Cloud Engineer</h4>
-            <h5>Google Cloud Platform (GCP)</h5>
-            <section>
-              <div>
-                <img src="images/date.svg" alt="date">
-                2021
-              </div>
-              <div>
-                <a href="https://www.credential.net/e6f78837-5a18-47d8-b3be-e1bc1d709d46" target="_blank" rel="noopener noreferrer">
-                  <img src="images/link.svg" alt="certificate">
-                  Certificate
-                </a>
-              </div>
-            </section>
-          </article>
-
-        </section>
-
-<!--          Interests-->
-        <section class="interests">
-          <h3 class="title">Interests</h3>
-          <ul class="tags">
-            <li>Travelling</li>
-            <li>Cricket</li>
-            <li>Cooking</li>
-          </ul>
-        </section>
-      </div>
-    </aside>
-  </main>
-  <footer>
-
-<!--      Visitor Counter-->
-    <div id="visitor-counter">
-      <p id='visitor-count'></p>
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Samrat Vooradi</span>
+      <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+      </ul>
     </div>
-  </footer>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="text-info" id="visitor-counter">
+        <p id='visitor-count'></p>
+      </div>
+    </footer><!-- End  Footer -->
+  </nav>
+  <!-- Page Content-->
+  <div class="container-fluid p-0">
+    <!-- About-->
+    <section class="resume-section" id="about">
+      <div class="resume-section-content">
+        <h1 class="mb-0">
+          Samrat
+          <span class="text-secondary">Vooradi</span>
+        </h1>
+        <div class="subheading mb-5">
+          Sydney NSW, Australia
+        </div>
+        <p align='justify' class="lead mb-5">Self-motivated Cloud enthusiast.
+          I'm ambitious and eager to advance my career and expand my knowledge in all things Cloud.</p>
+        <div class="social-icons">
+          <a class="social-icon" href="https://linkedin.com/in/samratvooradi"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-icon" href="https://github.com/vooradis"><i class="fab fa-github"></i></a>
+          <a class="social-icon" href="mailto:samrat.vooradi.au@gmail.com"><i class="fa fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Experience</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Project: Cloud Resume Challenge</h3>
+            <div class="subheading mb-3">Google Cloud Platform</div>
+            <p align="justify">A <a href="https://www.resume.samratvooradi.com">personal website on Google Cloud Platform</a> with an API backend, Cloud Build based CI/CD (both Front end and Back end) and Google Cloud Operations.
+              The Cloud Resume Challenge is a multiple-step resume project which helps build and demonstrate skills fundamental to pursuing a career in Google Cloud.
+              The project was first published by Forrest Brazeal in 2020.</p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-secondary">June 2022 - July 2022</span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Associate Solutions Architect</h3>
+            <div class="subheading mb-3">Landis+Gyr, Syndey NSW</div>
+            <p align="justify">Worked on <a href="https://www.landisgyr.com.au/product/w350-ultrasonic-water-meter/">Ultrasonic water meter</a> and offered technical support for the end-to-end solution.
+              Demonstrated ownership and initiative taking particularly, the third-party IoT platform and device integration.
+              Enhanced quality control for meter production and developed Windows desktop .NET applications for water meter local interface and implemented Python scripts for platform data export.
+              Worked on public cloud platforms to deploy third-party IoT platform as part of cloud enterprise architecture. Engaged multiple telcos for IPSec tunneling through private IPWAN and demonstrated knowledge of networking (UDP/IP, IPv4, NTP and DNS).
+              In addition to that, <a href="https://www.landisgyr.com.au/news/landisgyr-and-google-cloud-sign-groundbreaking-long-term-strategic-partnership/">
+              Landis+Gyr partnership with Google</a> gave me an opportunity to learn Google Cloud as part of digital transformation of existing on-premise solutions and accelerating migration to Google Cloud.
+            </p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-secondary">August 2019 - Present</span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Senior Firmware Engineer</h3>
+            <div class="subheading mb-3">Extel Technologies, Melbourne VIC</div>
+            <p align="justify">Worked on a robust, inexpensive and low powered pulse-counting device that attaches to analogue water meters to gather information from the water network. The device uses standardised NB-IoT communications platform and
+              is designed to
+              log the volume of water flowing through analogue water meters which can be uploaded to the cloud platform.
+              Designed software architecture and developed scalable architecture for LWM2M client application which can be used to interface 10 daughter board variants.
+              Refined IoT requirements, identified key risks with various Nb-Iot networks, and implemented industry best practices for Nb-Iot communication.
+              Developed LWM2M client stack from ground-up complying to OMA standard.
+            </p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-secondary">July 2018 - August 2019</span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Senior Firmware Engineer</h3>
+            <div class="subheading mb-3">Itron India Private Limited, India</div>
+            <p align="justify">Worked on residential gas meters featuring world's largest pre-payment system and smart communication modules involving design, development and debugging firmware using C in RTOS environment complying with MISRA
+              standards.
+              Delivered high quality code by conducting unit tests, static analysis and resolved firmware defects and developed Python framework for test automation.
+            </p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-secondary">December 2015 - February 2018</span></div>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <div class="subheading mb-3">Siemens Technology and Services Private Limited, India</div>
+            <p align="justify">Worked for industrial automation products such as IO node, Graphics LCD systems for flow transmitters and other products such as Smart analyser, Fault detector systems.
+            Generated intellectual property (IP) in low-power embedded system optimization techniques for display systems.
+            Developed real-time embedded software for low-power MCU-based hardware employing 8 to 32 but microcontrollers and implemented low-level drivers (HAL APIs) for LCDs, Flash, EEPROM, RTC, Bluetooth, USB, Modbus RTU, ASCII, and TCP/IP client in OSless, RTOS environments.
+            </p>
+          </div>
+          <div class="flex-shrink-0"><span class="text-secondary">July 2011 - November 2015</span></div>
+        </div>
+      </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Education-->
+    <section class="resume-section" id="education">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Education</h2>
+        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">International Institute of Information Technology (IIIT), Bengaluru, India</h3>
+            <div class="subheading mb-3">Master of Technology</div>
+            <!-- <div>Information Technology - Embedded Systems Specialization</div> -->
+            <div>Information Technology</div>
+          </div>
+          <div class="flex-shrink-0"><span class="text-secondary">August 2009 - June 2011</span></div>
+        </div>
+        <!-- <div class="d-flex flex-column flex-md-row justify-content-between">
+          <div class="flex-grow-1">
+            <h3 class="mb-0">Osmania University, Hyderabad, India</h3>
+            <div class="subheading mb-3">Bachelor of Engineering</div>
+            <div>Electronics and Communication Engineering</div>
+          </div>
+          <div class="flex-shrink-0"><span class="text-secondary">August 2004 - May 2008</span></div>
+        </div> -->
+      </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Skills</h2>
+        <div class="subheading mb-3">Programming Languages & Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+          <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+          <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+          <li class="list-inline-item"><i class="fab fa-python"></i></li>
+          <li class="list-inline-item"><i class="fa-solid fa-c"></i></li>
+          <li class="list-inline-item"><img src="assets/img/dotnet-logo.jpg" width="45" height="45"></li>
+        </ul>
+        <div class="subheading mb-3">Google Cloud Platform</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            API Gateway, Cloud Functions, Infrastructure as Code (IaC) - Terraform
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            Databases: Firestore
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            Developer Tools: Cloud Build, Cloud Source Repository
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            Management Tools: Cloud Shell, Cloud Console
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            Networking: Cloud CDN, Cloud DNS, Cloud Load Balancing
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-check"></i></span>
+            Storage: Cloud Storage
+          </li>
+        </ul>
+        <br />
+        <div class="subheading mb-3">Certifications</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+            GCP Certified - Professional Cloud Architect
+            <a href="https://www.credential.net/daa4f28b-e025-4d62-b755-6fe87fe688b4" target="_blank" rel="noopener noreferrer"><img src="assets/img/link.svg" alt="certificate" height="10" width="10"></a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fa-solid fa-certificate text-warning"></i></span>
+            GCP Certified - Associate Cloud Engineer
+            <a href="https://www.credential.net/e6f78837-5a18-47d8-b3be-e1bc1d709d46" target="_blank" rel="noopener noreferrer"><img src="assets/img/link.svg" alt="certificate" height="10" width="10"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+      <div class="resume-section-content">
+        <h2 class="mb-5">Interests</h2>
+        <p align="justify">Apart from being a cloud enthusiast, I enjoy most of my time being outdoors. In the winter, I am an avid skier and during the warmer months here in Sydney, I enjoy hiking.</p>
+        <p align="justify" class="mb-0">When forced indoors, I follow a number of action and comedy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the IoT world.
+        </p>
+      </div>
+    </section>
+    <hr class="m-0" />
   </div>
-<script src="js/script.js"></script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+  <script src="js/visitor_count.js"></script>
 </body>
+
 </html>
