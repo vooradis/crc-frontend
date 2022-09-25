@@ -1,20 +1,35 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+/*!
+* Start Bootstrap - Resume v7.0.5 (https://startbootstrap.com/theme/resume)
+* Copyright 2013-2022 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+*/
+//
+// Scripts
+//
+
+window.addEventListener('DOMContentLoaded', event => {
+
     getVisitCount();
+
+    // Activate Bootstrap scrollspy on the main nav element
+    const sideNav = document.body.querySelector('#sideNav');
+    if (sideNav) {
+        new bootstrap.ScrollSpy(document.body, {
+            target: '#sideNav',
+            offset: 74,
+        });
+    };
+
+    // Collapse responsive navbar when toggler is visible
+    const navbarToggler = document.body.querySelector('.navbar-toggler');
+    const responsiveNavItems = [].slice.call(
+        document.querySelectorAll('#navbarResponsive .nav-link')
+    );
+    responsiveNavItems.map(function (responsiveNavItem) {
+        responsiveNavItem.addEventListener('click', () => {
+            if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                navbarToggler.click();
+            }
+        });
+    });
 });
-
-const functionApi = 'https://elevated-cargo-355220-gateway-id-32ma8k0d.ts.gateway.dev/counter';
-
-const getVisitCount = () => {
-    let count = 0;
-    fetch(functionApi)
-    .then(response => {
-        return response.json()
-    })
-    .then(response => {
-        console.log("Website called cloud function.");
-        document.getElementById('visitor-count').innerHTML = "You're the visitor:" + response.currentVisitor;
-    }).catch(function(error) {
-        console.log(error);
-      });
-    return count;
-}
